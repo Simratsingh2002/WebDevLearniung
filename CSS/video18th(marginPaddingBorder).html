@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;   /* *selects everything and changes the default margin and padding as 0. As div or an element selected in a webpage is in a box basically , like outside the content it is padding then outside it their is border which is division between margin and padding          */
+            padding: 0;
+        }
+        .box {
+            background-color: aqua;  /*background color is covered in padding too , not outside that for that element.*/
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin:35px;
+            border: 2px solid blue;
+            height: 200px;   /*height is only for content inside the element ,not the whole element , whole element height would be adding border px ,padding px and margin px too from up and then down.*/
+            box-sizing: border-box;  /*if this is also written then the above height 200px would mean whole element size should be 200px including padding and border too. not margin*/
+        }
+        .box2{
+            color:red;
+            padding: 10px;
+            margin:25px;   /*MARGIN COLLAPSE - it refers when two boxes margins overlap on each other, then rather than their two margins adding and then it placing the second box , it rather chooses the max of both those and takes that as margin between both the boxes , refer the image attcahed below.*/
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">Im Text from class 1</div>  <!-- same element with 2 classes-->
+    <div class="box class1">Im text from class 2</div>
+    <a href="https://images.app.goo.gl/FKx1YHPZMkxfQPvG6"> click image for margin colapse</a>
+</body>
+</html>

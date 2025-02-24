@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            border: 5px solid purple;
+            position: relative;   /*means jaha hjona tha originally nusse idr udr */
+            height: 4434px; 
+            background-color: black;
+            /* Exception: transform, filter, or perspective properties can also make an element appear as positioned even if it wont have the postion propeety. U will study it futrher about prop. */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+        }
+        .box{
+            height: 133px;
+            width: 80vw;
+            border: 2px solid black;
+            padding: 3px;
+            margin: 3px;
+        }
+        .box1{
+            background-color: aqua;
+            position: sticky;  /*jaise hi iske paar scroll kra it will get stick .*/
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /*position: relative; mtlb i gave it property ki iski jedi original positioon(static) honi thi uspe kuch top bottom lga ke i can move the element
+            z-index: 1;  /*kinna utte aye , x,y,z only works when position properrty has been set*/
+        }
+        .box2{
+            background-color: aquamarine;
+            position: absolute;  /*if it has an absolute tag, it will posotion itself in respect to a nearest ancestor having a position tag.*/
+            top: 0px;
+            left: 40px;
+
+
+        }
+        .box3{
+            background-color: blueviolet;
+            position: fixed;  /*means it is fixed on page where ever web page has been scrolled to.*/
+            bottom: 0px;
+            left: 8vw;
+            height: 111px;
+        }
+        .box4{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</div>
+    
+    
+</body>
+</html>

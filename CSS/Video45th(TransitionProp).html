@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        /* TRANSITION MEANS CHANGING STATES OF A WEBPAGE,HOW SMOOTHLY IT WOULD CHANGE,RATHER THAN QUICK CHANGE */
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+            /* transition-property: background-color, transform             IT MEANS TRANSITION KISPE LGANI H;
+            transition-duration: 3s  IT MEANS KITNI DURATION KE LIYE TRANSITOON KRANI H;
+            transition-timing-function: cubic-bezier(0.22, 0.43, 0, 0.99);   THIS IS A FUNCTION OF HOW TRANSITION HAPPENS? FAST AT FIRST THEN SLOW THEN FAST , OR ANY OTHER PATTERN OR YOU WANT A LINEAR SPEED, SO U CAN GO ON INSPECT AND CAN CHANGE USING THE TOOL THEIR THEN SELECTED IF U LIKE WHICH ONE (AS U CAN CUSTOMIZE UR OWN AS WELL) , IT WILL GIVE U CUBIX BEZIER NUMBER*/
+            /* transition-delay: 1s;            IT MEANS AGR PROPERTY LAGGE TO KITNI DER M ASAR HO */
+            transition: all 3s cubic-bezier(0.09, 0.5, 0, 0.99) 1s;   /*CHAAro kathe lggi*/
+        }
+
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

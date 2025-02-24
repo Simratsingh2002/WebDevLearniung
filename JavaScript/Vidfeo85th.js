@@ -1,0 +1,2 @@
+//npm  init -y    ,, this setsup  a pckage module on what u working, then u can go it created files and edit the content u need in package.json which woulkd be created. And can also install dependices of that module as well.   
+//Module means jo doosra installed code jo hm kisi or se buy krre h

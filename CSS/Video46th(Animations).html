@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        /* SIMILAR TO TRANSITION PROP ,BUT ANIMATION PROVIDES MORE FEATURES TO COMPLEX PROB */
+        .container{
+            background-color: rgb(9, 106, 106);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box{
+            width: 34px;
+            height: 45px; 
+            /* animation-name: harryKaAnimation; 
+            animation-duration: 1s;                 TIME TAKING FOR TRANSFORMATION
+            animation-iteration-count: infinite;     HOW MANY TIME WE WANT ANIMATION
+            animation-timing-function: cubic-bezier(0, 0, 0, 0.96);
+            animation-delay: 1s;    HOW MUCH TIME AFTER LOADING OF WEBPAGE ANIMATION HAPPENING
+            animation-direction: reverse;         DIRECTION OF ANIMATION
+            animation-play-state: paused;           IT MEANS PASUING THE CONTINUED ANIMATION*/
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* FILL MODE SAYS WHat property the element would retain after animation , new old or how? */
+            animation: harryKaAnimation 2s ease-in-out 3s 1,  /*THIS IS HOW WE APPLY ALL PROP IN 1 PROP.*/
+                       harry2 3s ease-in-out 10s 1;     /*applying multiple animations*/
+                       
+        }
+
+        @keyframes harryKaAnimation {   /*WE INTRODUCING A NAME TO THE ANIMATION*/
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow; 
+            }
+        }
+
+        @keyframes harry2 {
+            0%{   /*from 0 to 100 it will run , and at 50% it will do certain thing*/
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

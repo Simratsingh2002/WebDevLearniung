@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   <!-- WE WORKED ON CSS SELECTOR IN THIS VIDEO, THEY HELP TO IDENTIFY WHAT PART TO EDIT OR COLOU-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector  */
+        div{
+            /* background-color: red; */
+        }
+
+        /* Class Selector  */
+        .red{
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selectors , means jaha jaha p div ka first child h vhi p */ 
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendant Selector  , means jaha pe p bas descent ho div ka doesnt matter what generation*/
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Universal Selector  , selects everyone*/
+        * {
+            margin:0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector   , means link already visited*/
+        a:visited{
+            color: yellow
+        }
+
+        a:link {  /*  means link not visited yet ka colour krna*/
+            color: green;
+        }
+
+        a:active{         /*  means link jaise hi click krne vale  ka colour krna*/
+            background-color: red;
+        }
+
+        a:hover{          /*  means jonse link ke upr mouse leke jaria ,link ka colour krna*/
+            background-color: yellow;
+        }
+
+
+        p:first-child{         /* whereever p tag is first child of anything */
+            background-color: aqua;
+        }
+
+        div:p :nth-child(5)  {
+            background-color: wheat;   /* number of child uspe lgao , 5th child te hiu*/
+        }
+         /* .box:first-child{           means .box is first child
+            background-color: red;
+        } */
+
+        /* .box::first-line{           .box de andr di only first line 
+            color: yellow;
+        } */
+
+        /* .boxes *{               .boxes de andr sara kuch kala kala element
+            color: blue;
+            border: 2px solid black;
+        }
+
+        p, a, .box, [data-color="primary"]{      selecting multiple elements
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(odd){         when it is odd child
+            background-color: blue;
+        } */
+
+        /* .box:nth-last-child(2){           picho 2nd child a
+            background-color: red;
+        } */
+
+        /* .boxes::before {                 .boxes de andr koi vi content to pella eh vale content nu pado            
+            content: "Harry is good";
+            color: blue;
+        } */
+
+        .boxes::after {
+            content: "Sigma course is also good";
+            color: red;
+        }
+
+        /* ::selection {                  when text is selected   
+            background-color: black;
+            color: aqua;
+        } */
+
+        /* .box::first-letter {            box de andr pella letter   
+            color: peru;
+            font-size: 45px;
+        } */
+
+        input::placeholder {             /*jede vi input paun ale section ch placeholder hunda unnu*/
+            color: rgb(84, 84, 88);
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+    <input type="text" placeholder="Type your name here">
+</body>
+</html>

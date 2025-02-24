@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+    <!-- Through Document Object Model, we target elements of our webpage using Javascript 
+     Browser Object Model, also gives us additional benefits and functions to target objects.-->
+    <script>
+        document.title = "Harry is good"
+        console.log(document.title)
+        console.log(document.body)  //by this we view what tag it has , then further we can targer inside it
+        document.body.style.backgroundColor = "green";
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+        h1 {
+            font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif   /* This means font family , if 1 not available then go to 2nd , then 3rd .*/
+        }
+
+        p {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: 'Baloo Bhai 2', sans-serif;  /*imported from the link given above*/
+            font-size: 20px; 
+            /* font-style:italic;
+            font-weight: 500;  */   /* weight means gada pan in text and style done by italic. */
+            
+        }
+        h2{
+            text-align: center;    /* text rkhna kitte a center or we can give pixels too vi kinni agge rekhna */
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: blue;
+            /* text-decoration-style: dotted; */
+            text-decoration-thickness: 7px ;
+            text-indent: 45px;   /* Text kinna right te chahida? after aligning*/
+            /* WE CAN EDIT THESE PROPEETIES AND CHECK IN BROWSER WITH LIVE SERVER TOO AFTER INSPECTING THEN SELECT AND AT COMPUTATION TO CHECK HOW HAT THING LOOKS.*/
+        }
+        .lorem{
+            border: 2px solid red;
+            width: 145px;  /* inni k width tk hi text rahuga , kind of a border */
+            word-break: break-all;  /* u want to break word at width ornot */
+            text-overflow: ellipsis;   /* whatkind of overflow u want */      
+            overflow: hidden;   /* overflow out of width, what kind u want scroll or hidden  */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+        <h1>Fonts</h1>
+        <h2>about Fonts</h2>
+        <p>This is a video on fonts</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sequi accusamus quas itaque molestias dolorem quisquam quod, adipisci maxime dolore, mollitia illo officia deserunt voluptatem iure qui. Fugit aliquam possimus aperiam commodi eum amet veniam at vel. Necessitatibus asperiores eos amet laborum dolor, ipsum porro!</p>
+    </div>
+</body>
+
+</html>

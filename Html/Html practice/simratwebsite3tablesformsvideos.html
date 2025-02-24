@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simratweb3(tables)</title>
+</head>
+
+<body>
+    <div>
+        <ul type="square">  <!-- UNORDERED LIST -->
+            <li>S.No</li>
+            <li>Player Name</li>
+            <li>Max Score</li>
+            <li>Game</li>
+        </ul>
+    </div>
+    <div>
+        <ol type="I">                 <!-- ordered list -->
+            <li>S.No</li>
+            <li>Player Name</li>
+            <li>Max Score</li>
+            <li>Game</li>
+        </ol>
+    </div>
+    <div>
+        <table> <!-- Table tag-->
+            <thead> <!-- for grouping table header content and other one is table body tag>
+            <th>  <-- table heading-->
+                <Caption>
+                    Max Score by a player
+                </Caption>
+                <tr> <!-- tablke row-->
+                    <th>S.No</th>
+                    <th colspan="3">Max Score</th> <!--table heading with 3 column space-->
+                    <!-- <th>Game</th> -->
+                </tr>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td> <!-- table data-->
+                    <td>Sachin</td>
+                    <td>200</td>
+                    <td>Cricket</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Virat</td>
+                    <td>183</td>
+                    <td>Cricket</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+    <div>
+        <h1>Gym personal Training</h1>
+        <form action="form.php">            <!-- FORM STARTS HERE-->
+            <input type="text" placeholder="Enter your Name"><br>    <!-- WE SHOULDNT USE BR tag everytime , we will use div tag to create separation-->
+
+            <h3>Way of Training</h3>
+            <label for="WTID">   <!-- in label for represents- jis element ke liye h uski id-->
+                <input type="radio" value=" weight training" name="training" id="WTID"> Weight Training
+            </label>
+            <label for="CFID">
+                <input type="radio" value="cross fit" name="training" id=CFID> Crossfit
+            </label>
+            <label for="BWTID">
+                <input type="radio" value="bodyweight training" name="training" id="BWTID" class="red"> Bodyweight
+                Training
+
+            </label><br>
+            <h5>Food preference</h5>
+            <label for="food preferences">
+                <input type="checkbox" value="Non-Vegeterian" name="nutrition" class="red" id="food preferences">
+            </label>Non-Vegeterian
+
+            <h5>Time when u want to start</h5>
+            <input type="datetime-local" name="time" id="when to start"><br>
+            <br>
+
+            Contact <input type="email" placeholder="E-mail">
+            Password:<input type="password" placeholder="type your password here"><br>
+            <br> <!-- line break tag-->
+
+            <div><label for="reviews">      <!-- in label for represents- jis element ke liye h uski id-->
+            1st Week Trial: <textarea   name="Reviews" id="Trial Reviews" cols="30" rows="10"  >
+                placeholder="give your reviews"></textarea> </label>   <!-- text area tag starts-->
+            </div>
+
+            <select name="Diet" id="Protein">      <!-- select in form starts-->
+                <option value="No protein">Select ur whey</option>
+                <option value="on">ON</option>
+                <option value="mp">My Protein</option>
+            </select>
+        </form>
+    </div>
+
+
+
+    <div>        <!-- this tag helps to embedd another website in our website , this is helping us have a youtube video player in our website , embedded code can be generated through youtube itself-->
+        <iframe  width="560" height="315" src="https://www.youtube.com/embed/tpFljbJxZiw?si=w-nXSZ3wMUkVY9nY&amp;start=138" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+    </div>
+    <div>
+        <iframe src="http://www.gurumann.com" frameborder="0" width="250px"></iframe>   
+        <video src="Omgmeme.mp4" width="250px" controls muted></video>  <!-- video tag starts , after src we are giving attributes , not necessary to learn all , just search and do-->
+        <audio src=""></audio>        <!-- audio tag star-->
+        <!-- this is how we can play video through cloicking an image too-->
+        <aside> <a href="https://www.youtube.com/watch?v=BsDoLVMnmZs" target="_main"> <img src="https://static.toiimg.com/thumb/msid-79300434,width-1200,height-900,resizemode-4/.jpg" width="200px" alt="the video"></a></aside>
+        
+    
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
+<!-- basically vo cheez kya h - name  -->
+<!-- and uski value kya h next page pe that is value -->
+<!-- and form.php ka mtlb koi bhi form jo next form hoga -->
+<!-- and id is the particular id for an  -->

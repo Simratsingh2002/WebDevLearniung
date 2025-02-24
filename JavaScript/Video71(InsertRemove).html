@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<!-- WE HAVE LOT OF PROPERTIES IN THIS, VISIT HAND WRITTEN HARRY NOTES IN THIS VIDEO , in that we have functions to edit attributes,tags  -->
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="harry" data-conceptby="rohan" >Hey I am a box</div>
+        <div class="box">Hey I am a box</div>   
+        <!-- here data- is just an attribute -->
+        <script>
+            document.querySelector(".container").innerHTML="Hi im simrat"  //shows whaterver html written inside,a dn can be edited too 
+            document.querySelector(".box").innerText  //shows text inside
+            // let div = document.createElement("div");            created element    
+            // div.innerHTML = "I have been inserted <b>by harry</b>"       filled with info
+            // div.setAttribute("class", "created");     attribute set in that
+            // document.body.append(div)           div added 
+            // document.querySelector(".container").before(div);         it inserted div before the node that is container
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("beforebegin", "<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")        //used to insert HTML in a conatiner.   PLEASE VISIT NOTE FOIR A LOT OF FUNTIONS
+            // before  begin hone se pehle conatiner ke , ye bold vala html lgado
+            // cont.insertAdjacentElement  cont.insertAdjacentText    some more functions
+            // cont.classList   cont.className   cont.classList.add  some functions which can give u classes of an element 
+            cont.classList.toggle("Simrat")    //means agr simrat class nhi h to add krde , h to remove krke
+        </script>
+    </div>
+</body>
+
+</html>

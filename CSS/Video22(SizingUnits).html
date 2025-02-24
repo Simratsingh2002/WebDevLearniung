@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{                 /*root for all things*/
+            font-size: 12px;
+        }
+        .box {
+            box-sizing: border-box;  /*means it includes border ,padding , whole element basically*/
+             background-color: aquamarine;
+             border: 2px black;
+              /* width: 2048px; it means total pixel length , 2049 hoya fer scroll bar aaju*/    
+            width: 80vw;   /*vw is a unit in context to view port , screen de hisaab nal kini screen laini a */
+            height: 10vh;
+            margin: auto;  /** means apne aap view port dr according margin dena to get it in centre everytime*/
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;  /*23 px means top to bottom margin height */
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+        .container p{
+            /*font-size: 2em;  this means jitna font size isko milna tha inheritance ke through uska double krdo*/
+            font-size: 2rem; /* rem says jitna iski root ko milna tha uska double*/
+        }
+        .mycont{
+            background-color: blue;
+            color: red;
+            font-size: 22px;
+            /*width: 100vmin;  this means for device to device whatever is minimum in unit vh will be this value*/
+            width: 100vmax;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            /*if we use % in the units this means % of the value of the parent , like 50% width jini parent di a*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This a box
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis optio obcaecati repellat porro, possimus vel cumque eum nesciunt! Nesciunt in porro ea.
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+    
+</body>
+</html>

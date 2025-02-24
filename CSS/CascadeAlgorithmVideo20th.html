@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Specifity Means what selector would have more priority in a color of an element. Suppose 2 selectors are overlapping each other to show effect on one element. We measure specifity to select which would go first .   */
+        /* Style with !Important keyword > Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector . If 2 are same then latest order one would be select*/
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 1 + 10 = 11  */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: maroon;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {    /* Here href means agr isme href lga hua h to.  */
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
