@@ -11,7 +11,7 @@
         async function testpost() {
             let a = await fetch("/",{method: "POST"})
             let b=await a.text()
-            console.log(b)
+            console.log(b)    //it will get data which is response sent by server
         }
         testpost();
     </script>
