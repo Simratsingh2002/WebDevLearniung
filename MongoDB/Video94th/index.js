@@ -59,3 +59,4 @@ db.getCollection('courses').insertMany([
 // Print a message to the output window.
 console.log(`Done Inserting Data`);
  //gugigi
+ //cmnt
