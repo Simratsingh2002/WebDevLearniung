@@ -1,0 +1,6 @@
+We are interacting with Mongo DB intsance in our computer through  Mongo Db Compass UI 
+, and in that Mongo Db shell helps interact with mongodb database
+To use mongo db first , turn it on with ur terminal using command - "simratbhatia@Simrats-MacBook-Air data % sudo mongod --dbpath=/Users/simratbhatia/data/db"
+We can interact with MongoDb using our extension in vs code too.
+
+IF WE ADD a file by .mongodb.js    it gets running as a mongo db script for our database 
