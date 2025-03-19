@@ -8,7 +8,7 @@
  import express from "express";
 import {Todo} from "./models/Todo.js";
 
- let a=await mongoose.connect("mongodb://localhost:27017/todo");   //connection string to mongodb named todo
+ let a=await mongoose.connect("mongodb://localhost:27017/todo");   //connection string to mongodb database named todo
  const app=express();
  const port=3000;
 
