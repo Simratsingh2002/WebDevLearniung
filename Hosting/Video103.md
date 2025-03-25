@@ -1,3 +1,6 @@
+VPS hosting Virtual private server we get a linux machine from host.
+VPS gives us a cloud computer to host our project
+we login into that through our teerminal
 Types of Hosting:
 
 Shared Hosting   - having a shared computer along with other users from hosting company
