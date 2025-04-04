@@ -2,6 +2,7 @@
 //jaise index.html entry point hota h , similarily app.jsx react m entry point hota h
 //React is a library not a framework, framework m already defined structure hoti h vo apko overall bni bnai cheeze deta h , but library
 //m apko ik functionality milti h
+// Comment
 
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
