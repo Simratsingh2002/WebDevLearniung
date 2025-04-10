@@ -28,5 +28,5 @@ export default App
 // Hooks are a type of functions
 // page doesnt reload everytime in react ,
 // use state is also a type of hook
-//
+//hi
 
