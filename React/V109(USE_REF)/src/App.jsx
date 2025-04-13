@@ -49,3 +49,4 @@ function App() {
 }
 
 export default App
+// jab bhi aapko kisi DOM element ko access karna ho ya uski value ko update karna ho toh useRef use karo
