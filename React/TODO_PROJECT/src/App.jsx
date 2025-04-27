@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState , useEffect  } from 'react'
 import Navbar from './components/Navbar'
 import { v4 as uuidv4 } from 'uuid';
 
@@ -6,9 +6,25 @@ function App() {
   const [todo, setTodo] = useState("")  //state for the input text
   const [todos, setTodos] = useState([])  //state for the todos
 
+  useEffect(() => {
+    savetoLS()
+  }, [todos])
+
+  useEffect(() => {
+    let todoString = localStorage.getItem("todos")
+    if(todoString){
+      let todos = JSON.parse(localStorage.getItem("todos")) 
+      setTodos(todos)
+    }
+  }, [])
+
   const handleAdd = () => {
     setTodos([...todos, { id: uuidv4(),todo, isCompleted: false }])
     setTodo("")
+    savetoLS()
+  }
+  const savetoLS=()=>{
+    localStorage.setItem("todos", JSON.stringify(todos))
   }
 
   const handleEdit = (e,id) => {
@@ -20,6 +36,7 @@ function App() {
   const handleDelete = (e,id) => {
     let newTodos=todos.filter(item => item.id !== id)
     setTodos(newTodos)
+    savetoLS()
   }
   const handleChange = (e) => {
     setTodo(e.target.value)
@@ -29,7 +46,7 @@ function App() {
     setTodos(todos.map(item => 
       item.id === id ? {...item, isCompleted: !item.isCompleted} : item
     ))
-    
+    savetoLS()
   }
   return (
     <>
@@ -51,7 +68,7 @@ function App() {
               <input name={item.id} onChange={handleChechbox} type="checkbox" value={item.isCompleted} />
               <div className={item.isCompleted ? "line-through":""}>{item.todo} </div>
               </div>
-              <div className="buttons">
+              <div className="buttons flex h-full">
                 <button onClick={(e)=>handleEdit(e, item.id)} className='bg-violet-800 mx-2 rounded-full hover:bg-violet-950 p-4 py-2 text-sm font-bold text-white'>Edit</button>
                 <button onClick={(e)=>handleDelete(e, item.id)} className='bg-violet-800 mx-2 rounded-full hover:bg-violet-950 p-4 py-2 text-sm font-bold text-white'>Delete</button>
               </div>
