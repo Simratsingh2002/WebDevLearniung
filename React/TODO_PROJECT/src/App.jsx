@@ -59,11 +59,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto my-5 rounded-xl p-5 bg-violet-100 min-h-[80vh]">
-        <div className="addTodo my-5">
+      <div className="container mx-auto my-5 rounded-xl p-5 bg-violet-100 min-h-[80vh] w-1/2">
+      <h1 className='font-bold text-center text-3xl'>iTask - Manage your todos at one place</h1>
+        <div className="addTodo my-5 flex flex-col gap-4">
           <h2 className='text-lg font-bold'>Add Todo</h2>
-          <input onChange={handleChange} value={todo} className='bg-white w-1/2' type="text" placeholder='Add a todo' />
-          <button onClick={handleAdd} disabled={todo.length<=3} className='bg-violet-800 mx-2 rounded-full hover:bg-violet-950 p-4 py-2 text-sm font-bold text-white'>Add</button>
+          <input onChange={handleChange} value={todo} className='bg-white w-full' type="text" placeholder='Add a todo' />
+          <button onClick={handleAdd} disabled={todo.length<=3} className='bg-violet-800 mx-2 rounded-full hover:bg-violet-950 p-4 py-2 text-sm font-bold text-white disabled:opacity-50 disabled:cursor-not-allowed'>Add</button>
         </div>
         <input  onChange={toggleFinished} type="checkbox" checked={showFinished}  /> Show Finished
         <h2 className='text-lg font-bold'>Your Todos</h2>
@@ -72,7 +73,7 @@ function App() {
           {todos.map(item => { 
 
 
-            return (showFinished || !item.isCompleted)  && <div key={item.id} className="todo flex w-1/4 justify-between my-3 ">
+            return (showFinished || !item.isCompleted)  && <div key={item.id} className="todo flex w-1/2 justify-between my-3 ">
               <div className="flex gap-5">
               <input name={item.id} onChange={handleCheckbox} type="checkbox" checked ={item.isCompleted} />
               <div className={item.isCompleted ? "line-through":""}>{item.todo} </div>
