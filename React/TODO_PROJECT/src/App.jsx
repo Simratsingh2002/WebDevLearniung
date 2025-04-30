@@ -47,6 +47,7 @@ function App() {
   const handleDelete = (e,id) => {
     let newTodos=todos.filter(item => item.id !== id)
     setTodos(newTodos)
+    // savetoLS()
   }
   const handleChange = (e) => {
     setTodo(e.target.value)
