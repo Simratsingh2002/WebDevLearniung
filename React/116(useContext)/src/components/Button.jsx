@@ -9,6 +9,6 @@ const Button = () => {
       <button onClick={() => value.setCount((count) => count + 1)}><span><Component/></span>I am a button</button>
     </div>
   )
-}
+} 
 
 export default Button
