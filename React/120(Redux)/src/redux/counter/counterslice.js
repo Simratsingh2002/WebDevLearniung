@@ -34,3 +34,32 @@ export const counterSlice = createSlice({
 export const { increment, decrement, incrementByAmount, multiply } = counterSlice.actions
 
 export default counterSlice.reducer
+
+// below example to make how objects and properties work 
+
+
+// function createPerson(config) {
+//   // config is an object you pass in, e.g. { name: 'Alice', age: 30 }
+//   const { name, age } = config;
+
+//   return {
+//     // 1) we include the raw data you gave us…
+//     name,
+//     age,
+
+//     // 2) …and we also attach some related methods:
+//     sayHello() {
+//       console.log(`Hello, I’m ${this.name}!`);
+//     },
+//     haveBirthday() {
+//       this.age += 1;
+//       console.log(`Happy birthday! You’re now ${this.age}.`);
+//     }
+//   };
+// }
+
+// // Usage:
+// const alice = createPerson({ name: 'Alice', age: 30 });
+// // alice is now an object with properties and methods:
+// alice.sayHello();     // “Hello, I’m Alice!”
+// alice.haveBirthday(); // updates alice.age to 31, logs that out
