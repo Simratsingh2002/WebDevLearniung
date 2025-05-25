@@ -1,7 +1,7 @@
 import express  from "express"
-import cors from "cors"   //to be able to send requests from the frontend to the backend
+import cors from "cors"   //to be able to send requests from the frontend to the backend on same port.
 //npm install cors
-//npm install body-parser
+//npm install body-parser  
 import bodyParser from "body-parser" //to be able to parse the body of the request
 const app = express()
 const port = 3000
