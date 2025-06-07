@@ -96,7 +96,7 @@ export default function Home() {
             height={16}
           />
           Go to nextjs.org →
-          {/* OLLamadfd */}
+          {/* OLLamadfd/ */}
         </a>
       </footer>
     </div>
