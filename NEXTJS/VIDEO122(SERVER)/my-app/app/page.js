@@ -7,6 +7,7 @@ export default function Home() {
   data.then(e => console.log(e.toString()));  //.then accepts a function
   return (
     <div>hi</div>
+    // hi
   )
 }
 //NODEJS default is server side rendering
