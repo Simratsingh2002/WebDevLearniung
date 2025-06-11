@@ -11,6 +11,7 @@ const Footer = () => {
         <Link href='/contact'><li className='text-xs'>Contact</li></Link>
     </ul>
 </footer>
+// x
   )
 }
 
