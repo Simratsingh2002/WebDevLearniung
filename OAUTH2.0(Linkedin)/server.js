@@ -16,8 +16,8 @@ app.use(session({
 
 // LinkedIn OAuth Configuration
 const LINKEDIN_CONFIG = {
-  clientId: process.env.LINKEDIN_CLIENT_ID 
-  clientSecret: process.env.LINKEDIN_CLIENT_SECRET 
+  clientId: process.env.LINKEDIN_CLIENT_ID,
+  clientSecret: process.env.LINKEDIN_CLIENT_SECRET,
   redirectUri: process.env.LINKEDIN_REDIRECT_URI || 'http://localhost:3000/auth/linkedin/callback',
   scope: 'openid profile email', // Basic profile and email
   authUrl: 'https://www.linkedin.com/oauth/v2/authorization',
