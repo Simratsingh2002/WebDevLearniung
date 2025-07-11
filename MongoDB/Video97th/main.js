@@ -22,6 +22,7 @@ app.get('/generate', async (req, res) => {
     // Clear the collection Employee
     await Employee.deleteMany({}) 
     // Generate random data
+    //gen
 
     let randomNames = ['Rohan', "Sohan", "Mohan", "Sobhan"]
     let randomLang = ["Python", "js", "C++", "Java"]
