@@ -17,3 +17,9 @@ docker ps shows all container and docker img shows all images in system
 
 11. docker container vs VM -   usually a system has three layers , hardware , OS Kernel , application layer ...   so docker virtualizes only applicaion layer , but vM virtualizes application and OS too .
 Docker also has small vm isnide it which converts mac or windows to linux as docker container are only fro linux.
+
+12. we know on a machine using docker we can have two diff containers , but if we use docker network that helps our containers to interact with each other without a port or a local host
+   1. docker network create xyz(name) - to create one on machine
+   2. installed mongo image using command and linked it with this network- docker run -d -p27017:27017 --name mongo --network xyz -e username=abc pass= 123 mongo   
+   3. now third step i installed mongo-express (ui to interact with mongodb) image and linked it with same network again.
+   4. now our network is setup if from our server a request goes onto that url of mongo db it can be used with same mongo 
