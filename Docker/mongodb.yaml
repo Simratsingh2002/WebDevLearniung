@@ -9,6 +9,8 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=password
     networks:
       - mongodb-network
+    volumes:
+      - /Users/simratsingh/Desktop/data/db:/data/db
   mongo-express: 
     image: mongo-express
     ports:
